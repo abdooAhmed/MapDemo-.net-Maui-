@@ -1,0 +1,1 @@
+C:\Users\abdo\Source\Repos\MapDemoNetMaui\MapDemo\MapDemo.csproj;x64

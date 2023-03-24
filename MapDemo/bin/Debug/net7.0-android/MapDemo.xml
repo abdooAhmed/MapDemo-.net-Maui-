@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MapDemo</name>
+    </assembly>
+    <members>
+        <member name="P:MapDemo.ViewModels.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:MapDemo.ViewModels.BaseViewModel.isBusy"/>
+        </member>
+        <member name="P:MapDemo.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:MapDemo.ViewModels.BaseViewModel.title"/>
+        </member>
+        <member name="P:MapDemo.ViewModels.MapViewModel.IsReady">
+            <inheritdoc cref="F:MapDemo.ViewModels.MapViewModel.isReady"/>
+        </member>
+        <member name="P:MapDemo.ViewModels.MapViewModel.Longitude">
+            <inheritdoc cref="F:MapDemo.ViewModels.MapViewModel.longitude"/>
+        </member>
+        <member name="P:MapDemo.ViewModels.MapViewModel.Latitude">
+            <inheritdoc cref="F:MapDemo.ViewModels.MapViewModel.latitude"/>
+        </member>
+        <member name="P:MapDemo.ViewModels.MapViewModel.BindablePlaces">
+            <inheritdoc cref="F:MapDemo.ViewModels.MapViewModel.bindablePlaces"/>
+        </member>
+        <member name="P:MapDemo.ViewModels.MapViewModel.BindableLocation">
+            <inheritdoc cref="F:MapDemo.ViewModels.MapViewModel.bindableLocation"/>
+        </member>
+        <member name="F:MapDemo.ViewModels.MapViewModel.getCurrentLocationCommand">
+            <summary>The backing field for <see cref="P:MapDemo.ViewModels.MapViewModel.GetCurrentLocationCommand"/>.</summary>
+        </member>
+        <member name="P:MapDemo.ViewModels.MapViewModel.GetCurrentLocationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:MapDemo.ViewModels.MapViewModel.GetCurrentLocationAsync"/>.</summary>
+        </member>
+        <member name="F:MapDemo.ViewModels.MapViewModel.addLocationCommand">
+            <summary>The backing field for <see cref="P:MapDemo.ViewModels.MapViewModel.AddLocationCommand"/>.</summary>
+        </member>
+        <member name="P:MapDemo.ViewModels.MapViewModel.AddLocationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:MapDemo.ViewModels.MapViewModel.AddLocation"/>.</summary>
+        </member>
+        <member name="F:MapDemo.ViewModels.MapViewModel.disposeCancellationTokenCommand">
+            <summary>The backing field for <see cref="P:MapDemo.ViewModels.MapViewModel.DisposeCancellationTokenCommand"/>.</summary>
+        </member>
+        <member name="P:MapDemo.ViewModels.MapViewModel.DisposeCancellationTokenCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:MapDemo.ViewModels.MapViewModel.DisposeCancellationToken"/>.</summary>
+        </member>
+    </members>
+</doc>
