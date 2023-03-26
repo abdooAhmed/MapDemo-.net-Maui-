@@ -3,6 +3,9 @@ using Microsoft.Maui.Controls.Maps;
 using CommunityToolkit.Mvvm.Input;
 using MapDemo.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
+using System.Net;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace MapDemo.ViewModels
 {
@@ -12,9 +15,7 @@ namespace MapDemo.ViewModels
         bool isReady;
 
         [ObservableProperty]
-        double longitude = 0;
-        [ObservableProperty]
-        double latitude = 0;
+        string url = "";
 
         [ObservableProperty]
         ObservableCollection<Place> bindablePlaces;
@@ -48,6 +49,11 @@ namespace MapDemo.ViewModels
                     TimeSpan.FromSeconds(10));
 
                 var location = await Geolocation.GetLocationAsync(request, cts.Token);
+                location = new Location()
+                {
+                    Latitude = -37.96977418895127,
+                    Longitude = 145.300701806977
+                };
                 var placemarks = await Geocoding.GetPlacemarksAsync(location);
                 var address = placemarks?.FirstOrDefault()?.AdminArea;
 
@@ -73,16 +79,30 @@ namespace MapDemo.ViewModels
         [RelayCommand]
         private async Task AddLocation()
         {
+            var jsonDeserialized = new EntireData();
+            using (WebClient wc = new WebClient())
+            {
+                var json = wc.DownloadString(Url);
+                jsonDeserialized = JsonConvert.DeserializeObject<EntireData>(json);
+            }
             try
             {
-                Location loc = new Location()
+                if(jsonDeserialized != null)
                 {
-                    Latitude = this.Latitude,
-                    Longitude = this.Longitude,
-                };
-                Locations.Add(loc);
-                BindableLocation = new ObservableCollection<Location>(Locations);
-                IsReady = true;
+                    foreach(var item in jsonDeserialized.Items)
+                    {
+                        var data = item.Tag.Split(',');
+                        Location loc = new Location()
+                        {
+                            Latitude = Convert.ToDouble(data[0]),
+                            Longitude = Convert.ToDouble(data[1]),
+                        };
+                        Locations.Add(loc);
+                    }
+                    BindableLocation = new ObservableCollection<Location>(Locations);
+                    IsReady = true;
+
+                }
             }
             catch (Exception ex)
             {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abdo\\Source\\Repos\\MapDemoNetMaui\\MapDemo\\MapDemo.csproj": {}
+    "C:\\Users\\abdo\\source\\repos\\MapDemoNetMaui\\MapDemo\\MapDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abdo\\Source\\Repos\\MapDemoNetMaui\\MapDemo\\MapDemo.csproj": {
+    "C:\\Users\\abdo\\source\\repos\\MapDemoNetMaui\\MapDemo\\MapDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abdo\\Source\\Repos\\MapDemoNetMaui\\MapDemo\\MapDemo.csproj",
+        "projectUniqueName": "C:\\Users\\abdo\\source\\repos\\MapDemoNetMaui\\MapDemo\\MapDemo.csproj",
         "projectName": "MapDemo",
-        "projectPath": "C:\\Users\\abdo\\Source\\Repos\\MapDemoNetMaui\\MapDemo\\MapDemo.csproj",
+        "projectPath": "C:\\Users\\abdo\\source\\repos\\MapDemoNetMaui\\MapDemo\\MapDemo.csproj",
         "packagesPath": "C:\\Users\\abdo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abdo\\Source\\Repos\\MapDemoNetMaui\\MapDemo\\obj\\",
+        "outputPath": "C:\\Users\\abdo\\source\\repos\\MapDemoNetMaui\\MapDemo\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -100,6 +100,10 @@
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Xamarin.Android.Glide": {
               "target": "Package",
@@ -226,6 +230,10 @@
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -297,6 +305,10 @@
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -385,6 +397,10 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

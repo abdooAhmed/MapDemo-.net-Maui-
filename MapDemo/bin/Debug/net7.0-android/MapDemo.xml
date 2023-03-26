@@ -13,11 +13,8 @@
         <member name="P:MapDemo.ViewModels.MapViewModel.IsReady">
             <inheritdoc cref="F:MapDemo.ViewModels.MapViewModel.isReady"/>
         </member>
-        <member name="P:MapDemo.ViewModels.MapViewModel.Longitude">
-            <inheritdoc cref="F:MapDemo.ViewModels.MapViewModel.longitude"/>
-        </member>
-        <member name="P:MapDemo.ViewModels.MapViewModel.Latitude">
-            <inheritdoc cref="F:MapDemo.ViewModels.MapViewModel.latitude"/>
+        <member name="P:MapDemo.ViewModels.MapViewModel.Url">
+            <inheritdoc cref="F:MapDemo.ViewModels.MapViewModel.url"/>
         </member>
         <member name="P:MapDemo.ViewModels.MapViewModel.BindablePlaces">
             <inheritdoc cref="F:MapDemo.ViewModels.MapViewModel.bindablePlaces"/>

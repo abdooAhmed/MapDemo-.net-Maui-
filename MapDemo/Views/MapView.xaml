@@ -8,22 +8,19 @@
              xmlns:models="clr-namespace:MapDemo.Models"
              x:DataType="vm:MapViewModel"
              Title="MapView">
-    <Grid RowDefinitions="100,Auto,*"
-          ColumnDefinitions=".30*,.35*,.35*"
+    <Grid RowDefinitions="Auto,Auto,*"
+          ColumnDefinitions=".25*,.75*"
           Padding="10"
           ColumnSpacing="10"
           RowSpacing="10">
         <Button  Grid.ColumnSpan="2" Text="Get Current Location" 
                 Command="{Binding GetCurrentLocationCommand}"/>
-        <Entry Placeholder="Enter Task" 
+       
+        <Entry Placeholder="Enter Url" 
                Grid.Row="1"
-               Text="{Binding Latitude}"
+               Text="{Binding Url}"
                Grid.Column="1"/>
-        <Entry Placeholder="Enter Task" 
-               Grid.Row="1"
-               Text="{Binding Longitude}"
-               Grid.Column="2"/>
-        <Button Text="Add"
+        <Button Text="Reload"
                 Command="{Binding AddLocationCommand}"
                 Grid.Row="1"
                 />
